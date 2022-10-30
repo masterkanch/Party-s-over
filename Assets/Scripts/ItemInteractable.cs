@@ -6,11 +6,15 @@ public class ItemInteractable : MonoBehaviour
 {   
     [SerializeField] private string interactText;
     [SerializeField] private string interactdescript;
-    public void Interact(){
-        Debug.Log("Interact!");
+    public string Interact(){
+      return interactdescript;
     }
 
     public string GetInteractText(){
         return interactText;
+    }
+
+    public string GetInteractDescript(){
+        return interactdescript;
     }
 }

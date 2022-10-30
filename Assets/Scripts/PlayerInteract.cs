@@ -1,16 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerInteract : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    [SerializeField] private TextMeshProUGUI descriptTextMeshProUGUI;
+    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E)){
@@ -18,7 +14,7 @@ public class PlayerInteract : MonoBehaviour
             Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactRange);
             foreach(Collider collider in colliderArray){
                 if(collider.TryGetComponent(out ItemInteractable itemInteractable)){
-                    itemInteractable.Interact();
+                    descriptTextMeshProUGUI.text =  itemInteractable.Interact();
                 }
             }
         }
