@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private PlayerInteractUI playerInteractUI;
 
-    // Update is called once per frame
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E)){
@@ -19,6 +15,7 @@ public class PlayerInteract : MonoBehaviour
             foreach(Collider collider in colliderArray){
                 if(collider.TryGetComponent(out ItemInteractable itemInteractable)){
                     itemInteractable.Interact();
+                    playerInteractUI.userInteract = true;
                 }
             }
         }

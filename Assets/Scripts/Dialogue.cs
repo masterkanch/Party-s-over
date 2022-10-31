@@ -21,6 +21,11 @@ public class Dialogue : MonoBehaviour
         StartDialogue();
     }
 
+    public void InteractItem(string[] itemTexts)
+    {
+        speechList = itemTexts;
+    }
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
@@ -64,6 +69,7 @@ public class Dialogue : MonoBehaviour
 
         else
         {
+            speechText.text = string.Empty;
             gameObject.SetActive(false);
             index = 0;
         }
