@@ -5,48 +5,37 @@ using UnityEngine.UI;
 
 public class NextDialogue : MonoBehaviour
 {
-    public GameObject[] Dialogue { get { return dialogues.Dialogue; } }
-    public Dialogues dialogues;
+    [SerializeField] private GameObject[] dialogueObj;
+    // [SerializeField] private Dialogues dialogues;
 
     private int index = 0;
-    // Start is called before the first frame update
-    void Start()
-    {
 
+    private void Update()
+    {
+        CheckActivate();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void CheckActivate()
     {
-        checkActivate();
-    }
-
-    void checkActivate()
-    {
-        int lengthObject = Dialogue.Length - 1;
+        int lengthObject = dialogueObj.Length - 1;
         try
         {
-             if (Dialogue[index].activeSelf == false && index <= lengthObject)
+             if (dialogueObj[index].activeSelf == false && index <= lengthObject)
             {
                 index++;
             }
-            if (Dialogue[index - 1].activeSelf == false && index <= lengthObject)
+            if (dialogueObj[index - 1].activeSelf == false && index <= lengthObject)
             {
-                Dialogue[index].SetActive(true);
+                dialogueObj[index].SetActive(true);
             }
             else if (index == lengthObject + 1)
             {
+                // This can deactivate UI too
                 gameObject.SetActive(false);
                 index = 0;
             }
         }
         catch (System.Exception)
         {}
-    }
-
-    [System.Serializable]
-    public class Dialogues
-    {
-        public GameObject[] Dialogue;
     }
 }

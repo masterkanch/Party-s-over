@@ -5,28 +5,27 @@ using TMPro;
 
 public class Dialogue : MonoBehaviour
 {
-    public TextMeshProUGUI speakerNameText;
-    public TextMeshProUGUI speechText;
+    [SerializeField] private TextMeshProUGUI speakerNameText;
+    [SerializeField] private TextMeshProUGUI speechText;
 
-    public string speakerName;
-    public string[] lines;
-    public float textSpeed;
+    [SerializeField] private string speakerName;
+    [SerializeField] private string[] speechList;
+    [SerializeField] private float textSpeed = 0.05f;
     
     private int index;
-    // Start is called before the first frame update
-    void Start()
+
+    private void Start()
     {
         speechText.text = string.Empty;
         speakerNameText.text = speakerName;
         StartDialogue();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
-            if (speechText.text == lines[index])
+            if (speechText.text == speechList[index])
             {
                 NextLine();
             }
@@ -34,29 +33,29 @@ public class Dialogue : MonoBehaviour
             else
             {
                 StopAllCoroutines();
-                speechText.text = lines[index];
+                speechText.text = speechList[index];
             }
         }
     }
 
-    void StartDialogue()
+    private void StartDialogue()
     {
         index = 0;
         StartCoroutine(TypeLine());
     }
 
-    IEnumerator TypeLine()
+    private IEnumerator TypeLine()
     {
-        foreach (char c in lines[index].ToCharArray())
+        foreach (char c in speechList[index].ToCharArray())
         {
             speechText.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
     }
 
-    void NextLine()
+    private void NextLine()
     {
-        if (index < lines.Length - 1)
+        if (index < speechList.Length - 1)
         {
             index ++;
             speechText.text = string.Empty;

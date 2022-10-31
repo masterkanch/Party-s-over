@@ -55,7 +55,7 @@ public class SafeBox : MonoBehaviour
                 if (check != answers[i])
                 {
                     inputList.Clear();
-                    numScreen.text = "";
+                    numScreen.text = string.Empty;
                     break;
                 }
                 else if (i == answers.Length-1 && check == answers[i])
