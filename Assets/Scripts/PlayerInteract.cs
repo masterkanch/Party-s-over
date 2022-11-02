@@ -21,14 +21,14 @@ public class PlayerInteract : MonoBehaviour
         }
     }
 
-    public ItemInteractable GetInteractableObject(){
+    public (ItemInteractable, string) GetInteractableObject(){
         float interactRange = 2f;
         Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactRange);
         foreach(Collider collider in colliderArray){
             if(collider.TryGetComponent(out ItemInteractable itemInteractable)){
-                return itemInteractable;
+                return (itemInteractable, collider.tag);
             }
         }
-        return null;
+        return (null, "");
     }
 }

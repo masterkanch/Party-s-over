@@ -20,8 +20,16 @@ public class PlayerInteractUI : MonoBehaviour
     }
     
     private void Update(){
-        if(playerInteract.GetInteractableObject() != null && !userInteract){
-            Show(playerInteract.GetInteractableObject());
+        string tag = playerInteract.GetInteractableObject().Item2;
+        if(playerInteract.GetInteractableObject().Item1 != null && !userInteract && tag == "Clue"){
+            Show();
+            itemTexts = playerInteract.GetInteractableObject().Item1.GetInteractText();
+        }
+        else if (playerInteract.GetInteractableObject().Item1 != null && !userInteract && tag == "Puzzle")
+        {
+            // Call puzzle function from ItemInteractable and activate Puzzle UI
+            Debug.Log(tag);
+            Show();
         }
         else if (userInteract)
         {
@@ -33,9 +41,8 @@ public class PlayerInteractUI : MonoBehaviour
         }
 
     }
-    private void Show(ItemInteractable itemInteractable){
+    private void Show(){
         containerGameObject.SetActive(true);
-        itemTexts = itemInteractable.GetInteractText();
     }
 
     private void Hide(){
