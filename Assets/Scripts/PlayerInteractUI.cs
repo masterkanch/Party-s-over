@@ -9,6 +9,7 @@ public class PlayerInteractUI : MonoBehaviour
     [SerializeField] private GameObject dialogueContainer;
     [SerializeField] private PlayerInteract playerInteract;
     [SerializeField] private TextMeshProUGUI interactTextMeshProUGUI;
+<<<<<<< Updated upstream
     public bool userInteract = false;
 
     private Dialogue dialogue;
@@ -29,7 +30,19 @@ public class PlayerInteractUI : MonoBehaviour
             userInteract = false;
         }
         else{
+=======
+    public bool UserInteract = false;
+    
+    private void Update(){
+        if(playerInteract.GetInteractableObject() != null && UserInteract == false){
+            Show(playerInteract.GetInteractableObject());
+        }else if(UserInteract){
+>>>>>>> Stashed changes
             Hide();
+        }
+        else{
+            Hide();
+            
         }
 
     }
@@ -40,6 +53,7 @@ public class PlayerInteractUI : MonoBehaviour
 
     private void Hide(){
         containerGameObject.SetActive(false);
+<<<<<<< Updated upstream
         dialogueContainer.SetActive(false);
         userInteract = false;
     }
@@ -49,5 +63,8 @@ public class PlayerInteractUI : MonoBehaviour
         containerGameObject.SetActive(false);
         dialogue.InteractItem(itemTexts);
         dialogueContainer.SetActive(true);
+=======
+        //UserInteract = false;
+>>>>>>> Stashed changes
     }
 }
