@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1797958, g: 0.22512116, b: 0.30660087, a: 1}
+  m_IndirectSpecularColor: {r: 0.17979547, g: 0.2251203, b: 0.30659986, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8714,6 +8714,7 @@ GameObject:
   - component: {fileID: 334064523}
   - component: {fileID: 334064522}
   - component: {fileID: 334064521}
+  - component: {fileID: 334064524}
   m_Layer: 5
   m_Name: James
   m_TagString: Untagged
@@ -8785,7 +8786,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 334064522}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 334064524}
+        m_TargetAssemblyTypeName: Button, Assembly-CSharp
+        m_MethodName: GameOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &334064522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8824,6 +8837,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334064519}
   m_CullTransparentMesh: 1
+--- !u!114 &334064524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334064519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccca1d0928fae4ecba0cf477f7b06150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &339536959
 GameObject:
   m_ObjectHideFlags: 0
@@ -10755,6 +10780,7 @@ GameObject:
   - component: {fileID: 476843539}
   - component: {fileID: 476843538}
   - component: {fileID: 476843537}
+  - component: {fileID: 476843540}
   m_Layer: 5
   m_Name: Debra
   m_TagString: Untagged
@@ -10826,7 +10852,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 476843538}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 476843540}
+        m_TargetAssemblyTypeName: Button, Assembly-CSharp
+        m_MethodName: GameOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &476843538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10865,6 +10903,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476843535}
   m_CullTransparentMesh: 1
+--- !u!114 &476843540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476843535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccca1d0928fae4ecba0cf477f7b06150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &479561892 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 29f8732179c306741966fcd26426f55e,
@@ -30841,7 +30891,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1490469307}
-  m_RootOrder: 22
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: -29.18, z: 0}
 --- !u!4 &961564960 stripped
 Transform:
@@ -32057,6 +32107,7 @@ GameObject:
   - component: {fileID: 1078766888}
   - component: {fileID: 1078766887}
   - component: {fileID: 1078766886}
+  - component: {fileID: 1078766889}
   m_Layer: 5
   m_Name: 'Sebastian '
   m_TagString: Untagged
@@ -32128,7 +32179,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1078766887}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1078766889}
+        m_TargetAssemblyTypeName: Button, Assembly-CSharp
+        m_MethodName: GameOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1078766887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32167,6 +32230,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1078766884}
   m_CullTransparentMesh: 1
+--- !u!114 &1078766889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078766884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccca1d0928fae4ecba0cf477f7b06150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1080218851
 GameObject:
   m_ObjectHideFlags: 0
@@ -33285,7 +33360,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1490469307}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1166659590
 GameObject:
@@ -36579,19 +36654,19 @@ Transform:
   - {fileID: 1615017650}
   - {fileID: 2111535312}
   - {fileID: 2005174288}
-  - {fileID: 1626785379}
-  - {fileID: 232205056}
   - {fileID: 1980341521}
   - {fileID: 1150678148}
+  - {fileID: 6791618510096706349}
+  - {fileID: 9045523354833401359}
+  - {fileID: 1626785379}
+  - {fileID: 945327182}
+  - {fileID: 232205056}
   - {fileID: 1864276245}
   - {fileID: 403291627}
   - {fileID: 2118801283}
-  - {fileID: 6791618510096706349}
   - {fileID: 729478497}
   - {fileID: 961564960}
   - {fileID: 151455929}
-  - {fileID: 9045523354833401359}
-  - {fileID: 945327182}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -51172,7 +51247,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1490469307}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1982326931 stripped
 Transform:
@@ -51339,6 +51414,7 @@ GameObject:
   - component: {fileID: 2006746432}
   - component: {fileID: 2006746431}
   - component: {fileID: 2006746430}
+  - component: {fileID: 2006746433}
   m_Layer: 5
   m_Name: 'Matha '
   m_TagString: Untagged
@@ -51410,7 +51486,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2006746431}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2006746433}
+        m_TargetAssemblyTypeName: Button, Assembly-CSharp
+        m_MethodName: GameOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2006746431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51449,6 +51537,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006746428}
   m_CullTransparentMesh: 1
+--- !u!114 &2006746433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006746428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccca1d0928fae4ecba0cf477f7b06150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2030590388
 GameObject:
   m_ObjectHideFlags: 0
@@ -55776,7 +55876,7 @@ Transform:
   m_Children:
   - {fileID: 5232752442519047547}
   m_Father: {fileID: 1490469307}
-  m_RootOrder: 17
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6929268799936848312
 GameObject:
@@ -56720,7 +56820,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1490469307}
-  m_RootOrder: 21
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: -179.621, z: 0}
 --- !u!1 &9045523354833889839
 GameObject:

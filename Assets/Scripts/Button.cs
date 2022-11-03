@@ -24,4 +24,8 @@ public class Button : MonoBehaviour
     public void Menu(){
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void GameOver(){
+        SceneManager.LoadScene("GameOver");
+    }
 }
