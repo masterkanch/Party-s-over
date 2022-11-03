@@ -20,4 +20,8 @@ public class Button : MonoBehaviour
     public void Scene2(){
         SceneManager.LoadScene("Scene2");
     }
+
+    public void Menu(){
+        SceneManager.LoadScene("MainMenu");
+    }
 }
