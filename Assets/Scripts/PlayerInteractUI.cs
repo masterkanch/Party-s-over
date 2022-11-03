@@ -52,7 +52,12 @@ public class PlayerInteractUI : MonoBehaviour
     private void Show(){
         try
         {
-            if (!dialogueObject.activeSelf && !puzzleObject.activeSelf) 
+            if (puzzleObject != null)
+            {
+                if (!dialogueObject.activeSelf && !puzzleObject.activeSelf) 
+                {containerGameObject.SetActive(true);}
+            }
+            else if (!dialogueObject.activeSelf && puzzleObject == null)
             {containerGameObject.SetActive(true);}
         }
         catch (System.Exception) {}
