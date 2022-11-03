@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NextDialogue : MonoBehaviour
+public class ActiveNextObject : MonoBehaviour
 {
     [SerializeField] private GameObject[] dialogueObj;
     // [SerializeField] private Dialogues dialogues;

@@ -10,7 +10,7 @@ public class Dialogue : MonoBehaviour
 
     [SerializeField] private string speakerName;
     [SerializeField] private string[] speechList;
-    [SerializeField] private float textSpeed = 0.05f;
+    [SerializeField] private float textSpeed = 0.07f;
     
     private int index;
 

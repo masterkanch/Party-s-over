@@ -72,12 +72,19 @@ public class SafeBox : MonoBehaviour
         if (correctAns && !isOpen) 
         {// Access when the answers are correct. It's will change a puzzle to be clue
             isOpen = !isOpen;
-            puzzle.SetActive(false);
+            StartCoroutine(CD());
             gameObject.tag = "Clue";
         }
         else if(submit && !correctAns)
         {
             submit = !submit;
         }
+        
+    }
+
+    private IEnumerator CD()
+    {
+        yield return new WaitForSeconds(2f);
+        puzzle.SetActive(false);
     }
 }

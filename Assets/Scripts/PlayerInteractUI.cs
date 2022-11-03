@@ -50,8 +50,13 @@ public class PlayerInteractUI : MonoBehaviour
 
     }
     private void Show(){
-        if (!dialogueObject.activeSelf || puzzleObject.activeSelf) {containerGameObject.SetActive(true);}
-
+        try
+        {
+            if (!dialogueObject.activeSelf && !puzzleObject.activeSelf) 
+            {containerGameObject.SetActive(true);}
+        }
+        catch (System.Exception) {}
+        
         interactTextMeshProUGUI.text = playerInteract.GetInteractableObject().Item1.itemName;
     }
 

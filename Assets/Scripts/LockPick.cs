@@ -31,7 +31,6 @@ public class LockPick : MonoBehaviour
             if (adjustLock >= 5) return;
 
             adjustLock++;
-            // keyOrder.text = lockIndex.ToString();
             CheckAnswer();
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow))
@@ -39,7 +38,6 @@ public class LockPick : MonoBehaviour
             if (adjustLock <= -5) return;
 
             adjustLock--;
-            // keyOrder.text = lockIndex.ToString();
             CheckAnswer();
         }
 
@@ -87,8 +85,14 @@ public class LockPick : MonoBehaviour
         if (answers.Count == key.Length)
         {
             Debug.Log("Dong!");
-            lockObject.SetActive(false);
+            StartCoroutine(CD());
             gameObject.tag = "Clue";
         }
+    }
+
+    private IEnumerator CD()
+    {
+        yield return new WaitForSeconds(0.5f);
+        lockObject.SetActive(false);
     }
 }
