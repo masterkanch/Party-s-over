@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerInteract : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class PlayerInteract : MonoBehaviour
             foreach(Collider collider in colliderArray){
                 if(collider.TryGetComponent(out ItemInteractable itemInteractable)){
                     playerInteractUI.userInteract = true;
+
                 }
             }
         }

@@ -19,4 +19,8 @@ public class ItemInteractable : MonoBehaviour
     public string[] GetInteractText(){
         return interactText;
     }
+
+    public string GetInteractDescript(){
+        return interactdescript;
+    }
 }
