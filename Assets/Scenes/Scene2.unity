@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17979547, g: 0.2251203, b: 0.30659986, a: 1}
+  m_IndirectSpecularColor: {r: 0.1797958, g: 0.22512116, b: 0.30660087, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9529,6 +9529,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 253489449}
     m_Modifications:
+    - target: {fileID: 6210862968171420939, guid: c7e0c4b63e5b2f94eaecc2e3998661d8,
+        type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 339536959}
     - target: {fileID: 6210862968171420940, guid: c7e0c4b63e5b2f94eaecc2e3998661d8,
         type: 3}
       propertyPath: m_Pivot.x
