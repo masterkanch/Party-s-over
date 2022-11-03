@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class ItemInteractable : MonoBehaviour
 {   
-    [SerializeField] private string interactText;
-    [SerializeField] private string interactdescript;
-    public string Interact(){
-      return interactdescript;
+    [SerializeField] public string itemName;
+    [SerializeField] private string[] interactText;
+    [SerializeField] public GameObject puzzle;
+
+    private void Update()
+    {
+        if (puzzle != null)
+        {
+            gameObject.tag = puzzle.tag;
+        }
     }
 
-    public string GetInteractText(){
+    public string[] GetInteractText(){
         return interactText;
-    }
-
-    public string GetInteractDescript(){
-        return interactdescript;
     }
 }

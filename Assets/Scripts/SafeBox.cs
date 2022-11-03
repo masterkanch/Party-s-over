@@ -6,6 +6,7 @@ using TMPro;
 public class SafeBox : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI numScreen;
+    [SerializeField] private GameObject puzzle;
 
     private int[] answers = {1, 1, 0, 4, 1, 9, 9, 7};
     private ArrayList inputList = new ArrayList();
@@ -15,7 +16,10 @@ public class SafeBox : MonoBehaviour
 
     private void Update()
     {
-        CheckAnswer();
+        if (!isOpen)
+        {
+            CheckAnswer();
+        }
     }
 
     public void NumClick(int num)
@@ -55,7 +59,7 @@ public class SafeBox : MonoBehaviour
                 if (check != answers[i])
                 {
                     inputList.Clear();
-                    numScreen.text = "";
+                    numScreen.text = string.Empty;
                     break;
                 }
                 else if (i == answers.Length-1 && check == answers[i])
@@ -65,14 +69,22 @@ public class SafeBox : MonoBehaviour
             }
         }
 
-        if (correctAns && !isOpen)
-        {
-            Debug.Log("It's open!");
+        if (correctAns && !isOpen) 
+        {// Access when the answers are correct. It's will change a puzzle to be clue
             isOpen = !isOpen;
+            StartCoroutine(CD());
+            gameObject.tag = "Clue";
         }
         else if(submit && !correctAns)
         {
             submit = !submit;
         }
+        
+    }
+
+    private IEnumerator CD()
+    {
+        yield return new WaitForSeconds(2f);
+        puzzle.SetActive(false);
     }
 }
