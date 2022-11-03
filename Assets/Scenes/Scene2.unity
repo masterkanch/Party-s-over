@@ -2003,6 +2003,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 37c3e2ad2636c46a299677247144cbb7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57d16c6a7c19a40d5a308a939c392a91, type: 3}
+--- !u!1 &226693120 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a76786f3b8c704932a3db545f00c2fe9,
+    type: 3}
+  m_PrefabInstance: {fileID: 463401274}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &230909057
 GameObject:
   m_ObjectHideFlags: 0
@@ -8450,6 +8456,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Safe
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ca3b57f3799bc48e5840ee00f9adf8d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Puzzle
+      objectReference: {fileID: 0}
     - target: {fileID: 7560563731308913237, guid: ca3b57f3799bc48e5840ee00f9adf8d0,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9371,6 +9382,35 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 463401274}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &403291628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226693120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f81dd60c8f14e66a096ec0ae3e2ea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Bottle
+  interactText:
+  - Behind the bar has Sebastian's fingerprints and blood on the tip.
+  puzzle: {fileID: 0}
+--- !u!65 &403291629
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226693120}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &406933812
 GameObject:
   m_ObjectHideFlags: 0
@@ -10151,6 +10191,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: beer bottle
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a76786f3b8c704932a3db545f00c2fe9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Clue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a76786f3b8c704932a3db545f00c2fe9, type: 3}
