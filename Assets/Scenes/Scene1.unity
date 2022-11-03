@@ -172,8 +172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: Sebastian
   speechList:
   - Good morning Detective.
@@ -228,8 +228,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: Detective
   speechList:
   - Yeah...?
@@ -283,8 +283,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: Heather
   speechList:
   - '*Heather waking up*'
@@ -340,8 +340,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: Debra
   speechList:
   - Are you detective? Had you work for Kevin?
@@ -398,8 +398,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: 
   speechList:
   - '*The party had begun for a while*'
@@ -442,6 +442,175 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342976722}
   m_CullTransparentMesh: 1
+--- !u!1001 &395898732
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1397971013}
+    m_Modifications:
+    - target: {fileID: 96649552768568858, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -1820
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -980
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670655716508213899, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+        type: 3}
+      propertyPath: m_Name
+      value: DialogueUI
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57cfa87486917aa45ac175cf2aaacdc2, type: 3}
+--- !u!224 &395898733 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4775560510018091373, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+    type: 3}
+  m_PrefabInstance: {fileID: 395898732}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &395898734 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 860513848819072686, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+    type: 3}
+  m_PrefabInstance: {fileID: 395898732}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &395898735 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2180422537335990147, guid: 57cfa87486917aa45ac175cf2aaacdc2,
+    type: 3}
+  m_PrefabInstance: {fileID: 395898732}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &399981747
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,8 +660,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: Everyone
   speechList:
   - '!!!!!!!'
@@ -546,8 +715,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: Sebastian
   speechList:
   - Hey, It's ok Kevin.
@@ -725,8 +894,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: Detective
   speechList:
   - Ok, guy back off don't touch anything and call every one in party last come here
@@ -821,8 +990,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: Detective
   speechList:
   - '*Get out of the car and stand on the road side*'
@@ -1017,8 +1186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: 
   speechList:
   - '*Everyone drink*'
@@ -1170,8 +1339,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: Debra
   speechList:
   - Hey, Bartender asked me to bring it for you.
@@ -1226,8 +1395,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: 
   speechList:
   - '*Debra walking to Detective*'
@@ -1465,8 +1634,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: Sebastian
   speechList:
   - Where is the other?
@@ -1520,8 +1689,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: Kevin
   speechList:
   - W..W..What!?
@@ -1578,8 +1747,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: 
   speechList:
   - '*Heather Screaming*'
@@ -1745,8 +1914,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: 
   speechList:
   - '*The door slam!!*'
@@ -1802,8 +1971,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: 
   speechList:
   - .
@@ -1897,8 +2066,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: 
   speechList:
   - '*Detective wake up. He see Sebastian waking up and Heather sleeping*'
@@ -1952,8 +2121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: Detective
   speechList:
   - Oh, thanks.
@@ -2009,8 +2178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: Sebastian
   speechList:
   - Clink! Clink! *Sebastian knock his glass*
@@ -2066,8 +2235,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: Dective
   speechList:
   - Yes, I'd work for him but..
@@ -2165,7 +2334,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1090401879}
-  - {fileID: 1431932032}
+  - {fileID: 395898733}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2174,185 +2343,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1001 &1431932031
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1397971013}
-    m_Modifications:
-    - target: {fileID: 96649552768568858, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 558855632532156099, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 32.600006
-      objectReference: {fileID: 0}
-    - target: {fileID: 558855632532156099, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -5.800049
-      objectReference: {fileID: 0}
-    - target: {fileID: 1171223971943240115, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.3622705
-      objectReference: {fileID: 0}
-    - target: {fileID: 1171223971943240115, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.3622705
-      objectReference: {fileID: 0}
-    - target: {fileID: 1171223971943240115, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.3622705
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8670655716508213899, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-        type: 3}
-      propertyPath: m_Name
-      value: DialogueUI
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 08ba51d6ea17d8f429acd65a1e16b206, type: 3}
---- !u!224 &1431932032 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4775560510018091373, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-    type: 3}
-  m_PrefabInstance: {fileID: 1431932031}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1431932033 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 860513848819072686, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-    type: 3}
-  m_PrefabInstance: {fileID: 1431932031}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1431932034 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2180422537335990147, guid: 08ba51d6ea17d8f429acd65a1e16b206,
-    type: 3}
-  m_PrefabInstance: {fileID: 1431932031}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1544839652
 GameObject:
   m_ObjectHideFlags: 0
@@ -2596,8 +2586,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: Kevin
   speechList:
   - Hmmm, They coming.
@@ -2652,8 +2642,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: Kevin
   speechList:
   - Oh, Thanks a lot Sebastian. And thank you everyone for coming here. Cheer!
@@ -2777,8 +2767,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: Detective
   speechList:
   - I..I..I feel so much dizzy.
@@ -2871,8 +2861,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: 
   speechList:
   - '*Everyone have to admit her to join party*'
@@ -2926,8 +2916,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: Sebastian
   speechList:
   - Where is the other?
@@ -3075,8 +3065,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9537ec9935af6e34caf1e863a8f01871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerNameText: {fileID: 1431932034}
-  speechText: {fileID: 1431932033}
+  speakerNameText: {fileID: 395898735}
+  speechText: {fileID: 395898734}
   speakerName: 
   speechList:
   - The party at Kevin's house.
