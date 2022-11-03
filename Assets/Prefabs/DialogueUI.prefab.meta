@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Models/Characters/DebraFlores(W)/DebraFlores_Idle.prefab.meta
+guid: 57cfa87486917aa45ac175cf2aaacdc2
+=======
 guid: 08ba51d6ea17d8f429acd65a1e16b206
+>>>>>>> main:Assets/Prefabs/DialogueUI.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

@@ -6,6 +6,7 @@ using TMPro;
 
 public class LockPick : MonoBehaviour
 {
+    [SerializeField] private GameObject door;
     [SerializeField] private GameObject lockObject;
     [SerializeField] private TextMeshProUGUI[] indexText;
 
@@ -94,5 +95,6 @@ public class LockPick : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         lockObject.SetActive(false);
+        Destroy(door);
     }
 }
