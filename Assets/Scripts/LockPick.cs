@@ -6,23 +6,21 @@ using TMPro;
 
 public class LockPick : MonoBehaviour
 {
-    [SerializeField] private GameObject wire;
-    [SerializeField] private TextMeshProUGUI keyOrder;
-    [SerializeField] private TextMeshProUGUI order;
+    [SerializeField] private GameObject lockObject;
+    [SerializeField] private TextMeshProUGUI[] indexText;
 
     private int[] key = {5, 2, -3, 4};
     private ArrayList answers = new ArrayList();
     private int keyIndex = 0;
-    private int lockIndex = 0;
-
-    private void Start()
-    {
-        // wire = GetComponent<RectTransform>();
-    }
+    private int adjustLock = 0;
 
     private void Update()
     {
-        DoorPick();
+        if (gameObject.tag == "Puzzle")
+        {
+            DoorPick();
+        }
+        
     }
 
     private void DoorPick()
@@ -30,18 +28,18 @@ public class LockPick : MonoBehaviour
         // Adjust lock
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            if (lockIndex >= 5) return;
+            if (adjustLock >= 5) return;
 
-            lockIndex++;
-            keyOrder.text = lockIndex.ToString();
+            adjustLock++;
+            // keyOrder.text = lockIndex.ToString();
             CheckAnswer();
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            if (lockIndex <= -5) return;
+            if (adjustLock <= -5) return;
 
-            lockIndex--;
-            keyOrder.text = lockIndex.ToString();
+            adjustLock--;
+            // keyOrder.text = lockIndex.ToString();
             CheckAnswer();
         }
 
@@ -50,25 +48,24 @@ public class LockPick : MonoBehaviour
         {
             if (keyIndex <= 0) return;
 
-            lockIndex = 0;
+            adjustLock = 0;
             keyIndex--;
-            order.text = keyIndex.ToString();
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             if (keyIndex >= key.Length - 1) return;
 
-            lockIndex = 0;
+            adjustLock = 0;
             keyIndex++;
-            order.text = keyIndex.ToString();
         }
     }
 
     private void CheckAnswer()
     {
-        if (lockIndex == key[keyIndex])
+        if (adjustLock == key[keyIndex])
         {
             Debug.Log("Ding!");
+            indexText[keyIndex].color = Color.green;
             answers.Insert(keyIndex, 0);
         }
         else 
@@ -77,6 +74,7 @@ public class LockPick : MonoBehaviour
             {
                 if (answers.Count > 0)
                 {
+                    indexText[keyIndex].color = Color.white;
                     answers.RemoveAt(keyIndex);
                 }
             }
@@ -89,6 +87,8 @@ public class LockPick : MonoBehaviour
         if (answers.Count == key.Length)
         {
             Debug.Log("Dong!");
+            lockObject.SetActive(false);
+            gameObject.tag = "Clue";
         }
     }
 }

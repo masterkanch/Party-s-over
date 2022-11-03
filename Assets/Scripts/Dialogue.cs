@@ -18,7 +18,7 @@ public class Dialogue : MonoBehaviour
     {
         speechText.text = string.Empty;
         speakerNameText.text = speakerName;
-        StartDialogue();
+        index = 0;
     }
 
     public void InteractItem(string[] itemTexts)
@@ -43,10 +43,11 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    private void StartDialogue()
+    private void OnDisable()
     {
+        speechText.text = string.Empty;
+        speakerNameText.text = speakerName;
         index = 0;
-        StartCoroutine(TypeLine());
     }
 
     private IEnumerator TypeLine()

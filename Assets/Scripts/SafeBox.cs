@@ -6,7 +6,7 @@ using TMPro;
 public class SafeBox : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI numScreen;
-    [SerializeField] private GameObject dialogue;
+    [SerializeField] private GameObject puzzle;
 
     private int[] answers = {1, 1, 0, 4, 1, 9, 9, 7};
     private ArrayList inputList = new ArrayList();
@@ -14,18 +14,11 @@ public class SafeBox : MonoBehaviour
     private bool correctAns = false;
     private bool isOpen = false;
 
-    private void Start()
-    {
-        // var speakerName = 
-    }
-
     private void Update()
     {
-        CheckAnswer();
-
-        if (isOpen)
+        if (!isOpen)
         {
-            dialogue.SetActive(true);
+            CheckAnswer();
         }
     }
 
@@ -77,9 +70,10 @@ public class SafeBox : MonoBehaviour
         }
 
         if (correctAns && !isOpen) 
-        {// Access when the answer correct. It's will change a puzzle to be clue
-            Debug.Log("It's open!");
+        {// Access when the answers are correct. It's will change a puzzle to be clue
             isOpen = !isOpen;
+            puzzle.SetActive(false);
+            gameObject.tag = "Clue";
         }
         else if(submit && !correctAns)
         {

@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
 {
-    [SerializeField] private PlayerInteractUI playerInteractUI;
+    private PlayerInteractUI playerInteractUI;
 
+    private void Start()
+    {
+        playerInteractUI = GameObject.Find("Canvas/PlayerInteractUI").GetComponent<PlayerInteractUI>();
+    }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E)){
             float interactRange = 2f;
             Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactRange);
             foreach(Collider collider in colliderArray){
                 if(collider.TryGetComponent(out ItemInteractable itemInteractable)){
-                    itemInteractable.Interact();
                     playerInteractUI.userInteract = true;
                 }
             }
